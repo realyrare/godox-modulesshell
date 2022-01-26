@@ -1,4 +1,4 @@
-# ShenNius.Framework
+#  GodOxModulesShell
 <div align="center">
 
     如果对您有帮助，点击右上角⭐Star⭐关注 ，感谢支持开源！
@@ -7,25 +7,15 @@
 
 #### 介绍
 
- **基于Asp.NetCore的开发框架,目前已开发完权限管理模块，CMS模块、商城模块。特别适合中小型项目快速开发，对CRUD API接口抽象到上层controller,只需要建立对应的实体，即可生成某张表的增删改查接口。** 
+ **基于dotNetCore基础之上开发的模块化框架。核心思想借鉴了ABP VNext,支持依赖注入，轻量级，适用于中小项目模块化。业务模块CRUD API接口抽象到上层controller,只需要建立对应的实体，即可生成某张表的增删改查接口，未来将往低代码的方向发展** 
  
  所有的代码坚持" **Don't repeat yourself** "。坚决反对" **简单的事情复杂干** "，" **大量代码在应用层过度层层封装** "，反对" **过度设计** "的原则下进行开发。
 
  如果你有这个习惯，并且也想找一款迷你型、上手快，不用学习太多东西的框架，那么它就适合你，只要你会dotnet core,几乎没有学习成本。
 
-#### 分支概况
+#### 单机架构
 
-
- master分支为asp.netcore3.1单体分支:git clone -b master https://gitee.com/shenniu_code_group/shen-nius.-modularity.git 
-
-
- .net6.0分支为asp.netcore6.0单体分支:git clone -b .net6.0 https://gitee.com/shenniu_code_group/shen-nius.-modularity.git
-
-
- **page5.0分支为asp.netcore5.0单体前后端分离分支:git clone -b page5.0 https://gitee.com/shenniu_code_group/shen-nius.-modularity.git   。 注：该分支不再维护，适合大家学习二开使用。** 
-
-
- **模块化的项目地址：[基于dotNetCore基础之上开发的模块化框架](https://gitee.com/shenniu_code_group/godox-modulesshell.git)** 
+ **该项目还有个单体架构地址：[适合小白入门进阶，更适用(实用)老手上路干活的dotnetcore框架](https://gitee.com/shenniu_code_group/shen-nius.-modularity)** 
 
 #### 特别申明
 
@@ -33,12 +23,7 @@
 
 #### 软件架构
 
-![输入图片说明](https://images.gitee.com/uploads/images/2021/1109/172453_89cc7f93_1173871.jpeg "项目架构图.jpg")
- 整体框架分为服务层、基础设施层，实体层，展现层。
-
- 很多人都使用过三层架构，该架构是从三层架构上面简化而来，去掉了以前三层架构中的数据访问层，配合顺手的ORM，不管开发API还是mvc效率和性能都是杠杠的。
-
- 以后整体架构会向DDD发展，逐步缓慢的演进，为解决业务需求会把实体层的贫血模型更改为充血模型，这是当下的任务。
+主要是使用已经千锤百炼的组件进行积木组装，然后结合业务快速开发，配合顺手的ORM，不管开发API还是mvc效率和性能都是杠杠的。
 
 
 #### 使用技术
@@ -58,27 +43,29 @@
 13. 对多租户使用Filter，不管是添加还是更新、查询即可自动赋值
 14. 支持七牛云和本地图片一键切换使用上传
 15. 对于单表的增删改查，在控制器内做了封装，有新的业务按约定建立对应的CRUD实体，一套API自动完成
-16. 支持站群管理
-17. 支持MediatR进程内通讯解耦(目前已取消使用，因为只支持进程内通讯)
 
 
 #### 安装教程
 
-1.  git clone -b master https://gitee.com/shenniu_code_group/shen-nius.-modularity.git 
-2.  在mysql上创建数据库shenniusdb，然后执行源码doc文件夹下的sql脚本语句，以最近日期为准。doc文件夹里面数据库字典文档，word、CHM、html格式的都有。
-3.  ShenNius.Mvc.Admin（前后端不分离）和ShenNius.API.Hosting（前后端分离 API）可以配置你要启动的appsettings.json文件信息。
+### 标题
+
+1.  git clone -b master https://gitee.com/shenniu_code_group/godox-modulesshell 
+2.  在mysql上创建数据库，然后执行源码doc文件夹下的sql脚本语句，以最近日期为准。doc文件夹里面数据库字典文档，word、CHM、html格式的都有。
+3. GodOx.Mvc.Admin（前后端不分离）和GodOx.API.Hosting（前后端分离 API）可以配置你要启动的appsettings.json文件信息。
 4、 使用过程中有什么问题欢迎提issues,基本都会第一时间解决。
 #### 使用说明
 
 1.   ShenNius.Share.Infrastructure 基础设施、里面包含常用的扩展方法、静态类。
 2.   ShenNius.Share.Models 实体层、里面包括Dto验证、配置类。
+
+### 标题
 3.   ShenNius.Share.Domain 服务层、业务逻辑基本都在这个里面、里面包含了数据访问操作。
 4.   ShenNius.Admin.API 有对服务层CRUD的抽象处理，模块只需按规则建立对应的CRUD实体，API接口自动生成。
 5.   ShenNius.API.Hosting 前后端分离的API。
 6.   ShenNius.Mvc.Admin 基于layui的后台管理包含CMS、商城，权限管理。
 
 
-#### 效果图
+#### 案例效果图
 
   #### 权限管理模块
 
