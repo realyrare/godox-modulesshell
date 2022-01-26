@@ -7,7 +7,7 @@
 
 #### 介绍
 
- **基于dotNetCore基础之上开发的模块化框架。核心思想借鉴了ABP VNext,支持依赖注入，轻量级，适用于中小项目模块化。业务模块CRUD API接口抽象到上层controller,只需要建立对应的实体，即可生成某张表的增删改查接口，未来将往低代码的方向发展** 
+ **基于dotNetCore基础之上开发的模块化业务框架。核心思想借鉴了ABP VNext,支持依赖注入，轻量级，适用于中小项目模块化。业务模块CRUD API接口抽象到上层controller,只需要建立对应的实体，即可生成某张表的增删改查接口，未来将往低代码的方向发展** 
  
  所有的代码坚持" **Don't repeat yourself** "。坚决反对" **简单的事情复杂干** "，" **大量代码在应用层过度层层封装** "，反对" **过度设计** "的原则下进行开发。
 
@@ -24,7 +24,9 @@
 #### 软件架构
 
 主要是使用已经千锤百炼的组件进行积木组装，然后结合业务快速开发，配合顺手的ORM，不管开发API还是mvc效率和性能都是杠杠的。
-
+1.framework文件夹下分别是模块化的核心代码和常用组件。
+2.module 文件夹有后台管理和小程序的API接口。
+3.client分别为各业务的宿主。
 
 #### 使用技术
 
@@ -51,16 +53,6 @@
 2.  在mysql上创建数据库，然后执行源码doc文件夹下的sql脚本语句，以最近日期为准。doc文件夹里面数据库字典文档，word、CHM、html格式的都有。
 3. GodOx.Mvc.Admin（前后端不分离）和GodOx.API.Hosting（前后端分离 API）可以配置你要启动的appsettings.json文件信息。
 4、 使用过程中有什么问题欢迎提issues,基本都会第一时间解决。
-
-#### 使用说明
-
-1.   ShenNius.Share.Infrastructure 基础设施、里面包含常用的扩展方法、静态类。
-2.   ShenNius.Share.Models 实体层、里面包括Dto验证、配置类。
-
-3.   ShenNius.Share.Domain 服务层、业务逻辑基本都在这个里面、里面包含了数据访问操作。
-4.   ShenNius.Admin.API 有对服务层CRUD的抽象处理，模块只需按规则建立对应的CRUD实体，API接口自动生成。
-5.   ShenNius.API.Hosting 前后端分离的API。
-6.   ShenNius.Mvc.Admin 基于layui的后台管理包含CMS、商城，权限管理。
 
 
 #### 案例效果图
