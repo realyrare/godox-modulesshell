@@ -47,18 +47,16 @@
 
 #### 安装教程
 
-### 标题
-
 1.  git clone -b master https://gitee.com/shenniu_code_group/godox-modulesshell 
 2.  在mysql上创建数据库，然后执行源码doc文件夹下的sql脚本语句，以最近日期为准。doc文件夹里面数据库字典文档，word、CHM、html格式的都有。
 3. GodOx.Mvc.Admin（前后端不分离）和GodOx.API.Hosting（前后端分离 API）可以配置你要启动的appsettings.json文件信息。
 4、 使用过程中有什么问题欢迎提issues,基本都会第一时间解决。
+
 #### 使用说明
 
 1.   ShenNius.Share.Infrastructure 基础设施、里面包含常用的扩展方法、静态类。
 2.   ShenNius.Share.Models 实体层、里面包括Dto验证、配置类。
 
-### 标题
 3.   ShenNius.Share.Domain 服务层、业务逻辑基本都在这个里面、里面包含了数据访问操作。
 4.   ShenNius.Admin.API 有对服务层CRUD的抽象处理，模块只需按规则建立对应的CRUD实体，API接口自动生成。
 5.   ShenNius.API.Hosting 前后端分离的API。
