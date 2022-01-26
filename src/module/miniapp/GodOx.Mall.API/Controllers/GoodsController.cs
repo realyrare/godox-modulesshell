@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 /*************************************
 * 类名：GoodsController
 * 作者：realyrare
-* 邮箱：mhg215@yeah.net
+* 邮箱：mahonggang8888@126.com
 * 时间：2021/8/31 14:46:34
 *┌───────────────────────────────────┐　    
 *│　   版权所有：神牛软件　　　　	     │

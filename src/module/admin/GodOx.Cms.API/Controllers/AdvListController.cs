@@ -16,7 +16,7 @@ using System.Threading.Tasks;
 /*************************************
 * 类 名： AdvListController
 * 作 者： realyrare
-* 邮 箱： mhg215@yeah.net
+* 邮 箱： mahonggang8888@126.com
 * 时 间： 2021/3/16 18:09:15
 * .netV： 3.1
 *┌───────────────────────────────────┐　    

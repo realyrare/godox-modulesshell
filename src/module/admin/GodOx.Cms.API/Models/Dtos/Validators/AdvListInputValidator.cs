@@ -4,7 +4,7 @@ using GodOx.Cms.API.Models.Dtos.Input;
 /*************************************
 * 类 名： AdvListInputValidator
 * 作 者： realyrare
-* 邮 箱： mhg215@yeah.net
+* 邮 箱： mahonggang8888@126.com
 * 时 间： 2021/3/16 17:35:06
 * .netV： 3.1
 *┌───────────────────────────────────┐　    

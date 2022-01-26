@@ -4,7 +4,7 @@ using System;
 /*************************************
 * 类 名： ColumnModifyInput
 * 作 者： realyrare
-* 邮 箱： mhg215@yeah.net
+* 邮 箱： mahonggang8888@126.com
 * 时 间： 2021/3/15 19:05:45
 * .netV： 3.1
 *┌───────────────────────────────────┐　    

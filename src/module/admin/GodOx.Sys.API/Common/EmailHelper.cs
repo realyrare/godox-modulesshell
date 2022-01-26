@@ -39,7 +39,7 @@ namespace GodOx.Sys.API.Common
                 }
                 else
                 {
-                    message.To.Add(new MailboxAddress("mhg", "mhg215@yeah.net"));
+                    message.To.Add(new MailboxAddress("mhg", "mahonggang8888@126.com"));
                 }
                 message.Subject = subject;
                 message.Body = new TextPart("plain")

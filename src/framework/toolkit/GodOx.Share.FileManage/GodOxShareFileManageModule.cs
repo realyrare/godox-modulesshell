@@ -13,13 +13,13 @@ namespace GodOx.Share.FileManage
             var enableLocalFile = Convert.ToBoolean(context.Configuration["LocalFile:IsEnable"]);
             if (enableLocalFile)
             {
-                context.Services.AddScoped<IUploadFile, LocalFile>();
+                context.Services.AddSingleton<IUploadFile, LocalFile>();
             }
             else
             {
                 //七牛云配置信息读取
                 context.Services.Configure<QiNiuOss>(context.Configuration.GetSection("QiNiuOss"));
-                context.Services.AddScoped<IUploadFile, QiniuCloud>();
+                context.Services.AddSingleton<IUploadFile, QiniuCloud>();
             }
         }
     }
