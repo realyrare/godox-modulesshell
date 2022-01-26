@@ -1,0 +1,13 @@
+﻿namespace GodOx.Sys.API.Models.Dtos.Input
+{
+    public class ModifyPwdInput
+    {
+        public int Id { get; set; }
+        public string NewPassword { get; set; }
+        public string ConfirmPassword { get; set; }
+        /// <summary>
+        /// 旧密码
+        /// </summary>
+        public string OldPassword { get; set; }
+    }
+}

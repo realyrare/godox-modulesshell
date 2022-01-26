@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+  
+    <NoWarn>1701;1702;1591;1573;1572;</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GodOx.Sys.API\GodOx.Sys.API.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\Dtos\Output\" />
+    <Folder Include="Models\Dtos\Query\" />
+  </ItemGroup>
+
+</Project>

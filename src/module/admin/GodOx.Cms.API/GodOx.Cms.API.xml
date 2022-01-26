@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GodOx.Cms.API</name>
+    </assembly>
+    <members>
+        <member name="M:GodOx.Cms.API.Controllers.ColumnController.GetAllParentColumn">
+            <summary>
+            所有父栏目
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GodOx.Cms.API.Controllers.MessageController.SoftDelete(GodOx.Cms.API.Models.Dtos.Input.Sys.DeletesSiteInput)">
+            <summary>
+            软删除
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GodOx.Cms.API.Controllers.MessageController.Deletes(GodOx.Cms.API.Models.Dtos.Input.Sys.DeletesSiteInput)">
+            <summary>
+            批量真实删除
+            </summary>
+            <param name="deleteInput"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GodOx.Cms.API.Controllers.SiteController.SetCurrent(GodOx.Cms.API.Models.Dtos.Input.SiteCurrentInput)">
+            <summary>
+            设置当前站点
+            </summary>
+            <param name="siteCurrentInput"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
